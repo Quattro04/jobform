@@ -3,6 +3,7 @@
   "projects": {
     "borix-taming": "apps/borix-taming",
     "borix-taming-e2e": "apps/borix-taming-e2e",
+    "registration": "libs/registration",
     "yorrics-training": "apps/yorrics-training",
     "yorrics-training-e2e": "apps/yorrics-training-e2e"
   }
