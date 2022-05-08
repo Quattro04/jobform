@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "borix-taming": "apps/borix-taming",
+    "borix-taming-e2e": "apps/borix-taming-e2e",
+    "yorrics-training": "apps/yorrics-training",
+    "yorrics-training-e2e": "apps/yorrics-training-e2e"
+  }
+}

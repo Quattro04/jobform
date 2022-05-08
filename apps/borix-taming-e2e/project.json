@@ -1,0 +1,28 @@
+{
+  "root": "apps/borix-taming-e2e",
+  "sourceRoot": "apps/borix-taming-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/borix-taming-e2e/cypress.json",
+        "devServerTarget": "borix-taming:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "borix-taming:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/borix-taming-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["borix-taming"]
+}

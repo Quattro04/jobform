@@ -1,0 +1,28 @@
+{
+  "root": "apps/yorrics-training-e2e",
+  "sourceRoot": "apps/yorrics-training-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/yorrics-training-e2e/cypress.json",
+        "devServerTarget": "yorrics-training:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "yorrics-training:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/yorrics-training-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["yorrics-training"]
+}

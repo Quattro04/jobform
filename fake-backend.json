@@ -1,0 +1,256 @@
+{
+  "borix": {
+    "form_steps": [
+      {
+        "structure": [
+          {
+            "name": "first_name",
+            "type": "input_text",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 3
+              },
+              {
+                "type": "max_length",
+                "value": 50
+              },
+              {
+                "type": "format",
+                "value": "alphanumeric"
+              },
+              {
+                "type": "required",
+                "value": true
+              }
+            ]
+          },
+          {
+            "name": "last_name",
+            "type": "input_text",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 3
+              },
+              {
+                "type": "max_length",
+                "value": 70
+              },
+              {
+                "type": "format",
+                "value": "alphanumeric"
+              },
+              {
+                "type": "required",
+                "value": true
+              }
+            ]
+          },
+          {
+            "name": "email",
+            "type": "input_email",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 3
+              },
+              {
+                "type": "max_length",
+                "value": 70
+              },
+              {
+                "type": "format",
+                "value": "email"
+              },
+              {
+                "type": "required",
+                "value": true
+              }
+            ]
+          },
+          {
+            "name": "motivational_paragraph",
+            "type": "textarea",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 100
+              },
+              {
+                "type": "max_length",
+                "value": 1000
+              },
+              {
+                "type": "format",
+                "value": "alphanumeric"
+              }
+            ]
+          },
+          {
+            "name": "apply",
+            "type": "button_submit",
+            "text": "Apply now!"
+          }
+        ]
+      }
+    ]
+  },
+  "yorrics": {
+    "form_steps": [
+      {
+        "structure": [
+          {
+            "name": "first_name",
+            "type": "input_text",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 3
+              },
+              {
+                "type": "max_length",
+                "value": 50
+              },
+              {
+                "type": "format",
+                "value": "alphanumeric"
+              },
+              {
+                "type": "required",
+                "value": true
+              }
+            ]
+          },
+          {
+            "name": "last_name",
+            "type": "input_text",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 3
+              },
+              {
+                "type": "max_length",
+                "value": 70
+              },
+              {
+                "type": "format",
+                "value": "alphanumeric"
+              },
+              {
+                "type": "required",
+                "value": true
+              }
+            ]
+          },
+          {
+            "name": "email",
+            "type": "input_email",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 3
+              },
+              {
+                "type": "max_length",
+                "value": 70
+              },
+              {
+                "type": "format",
+                "value": "email"
+              },
+              {
+                "type": "required",
+                "value": true
+              }
+            ]
+          },
+          {
+            "name": "next_step",
+            "type": "button_next_step",
+            "text": "Proceed"
+          }
+        ]
+      },
+      {
+        "structure": [
+          {
+            "name": "motivational_paragraph",
+            "type": "textarea",
+            "validations": [
+              {
+                "type": "min_length",
+                "value": 100
+              },
+              {
+                "type": "max_length",
+                "value": 1000
+              },
+              {
+                "type": "format",
+                "value": "alphanumeric"
+              }
+            ]
+          },
+          {
+            "name": "degree_of_education",
+            "type": "select",
+            "options": [
+              {
+                "text": "Unfinished primary school",
+                "value": "1"
+              },
+              {
+                "text": "Finished primary school",
+                "value": "2"
+              },
+              {
+                "text": "Short-term vocational upper secondary and similar education (2 years)",
+                "value": "3"
+              },
+              {
+                "text": "Short-term vocational upper secondary education (3 years)",
+                "value": "4"
+              },
+              {
+                "text": "High School Graduate",
+                "value": "5"
+              },
+              {
+                "text": "University basic education (pre-Bologna system, pre-1994)",
+                "value": "6/1"
+              },
+              {
+                "text": "Specialized university education (Bologna system), unspecialized university education (pre-Bologna system)",
+                "value": "6/2"
+              },
+              {
+                "text": "Master's education (Bologna system), specialized university education (pre-Bologna system)",
+                "value": "7"
+              },
+              {
+                "text": "Master's education (pre-Bologna system)",
+                "value": "8/1"
+              },
+              {
+                "text": "Doctor's education (PhD)",
+                "value": "8/2"
+              }
+            ]
+          },
+          {
+            "name": "previous_step",
+            "type": "button_previous_step",
+            "text": "Go back"
+          },
+          {
+            "name": "apply",
+            "type": "button_submit",
+            "text": "Apply now!"
+          }
+        ]
+      }
+    ]
+  }
+}
